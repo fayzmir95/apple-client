@@ -108,14 +108,9 @@ a{
 .site-header__item:nth-child(4){
     margin-right: 40px;
 }
-.site-header__item:nth-child(5) .site-header__link{
-    border-bottom: 1px;
-    border-bottom-color:#333333;   ????????????
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 150%;
-    text-align: center;
-    color: #666666;
+.site-header__item:last-child .site-header__link{
+    padding-bottom: 6px;
+    border-bottom: 1px solid #333;
 }
 /* SITE HEADER STYLES END */
 
@@ -166,20 +161,27 @@ a{
 /* INFO SECTION STYLES START*/
 .info-list{
     margin-bottom: 246.46px;
-}
-.info-list{
     display: flex;
     justify-content: space-between;
 }
 .info-item{
     width: 280px;
+}    
+.info-item:not(:last-child)::after{
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #DDDDDD;
+    box-shadow: 16px 0px 0px 0px #ddd, 32px 0px 0px 0px #ddd;
+    content: "";
 }
 .info-title{
+    margin-top: 0;  
+    margin-bottom: 30px;
     font-weight: 700;
     font-size: 18px;
     line-height: 150%;
-    text-transform: uppercase;
-    color: #222222;
+    color: #222;
 }
 .info-text{
     font-size: 15px;
@@ -190,8 +192,16 @@ a{
     font-weight: 700;
     font-size: 16px;
     line-height: 160%;
-    text-transform: uppercase;
     color: #EA625C;
+}
+.info-btn::before{
+    /* padding-top: -15px; */
+    margin-right: 10px;
+    display: inline-block;
+    width: 40px;
+    height: 0px;
+    border: 2px solid #EA625C;
+    content: "";
 }
 /* INFO SECTION STYLES END */
 
@@ -274,6 +284,4 @@ a{
     color: #FFFFFF;
     background-color: #EA625C;
 }
-
-
 /* FOOTER STYLES END */
