@@ -196,7 +196,7 @@ a{
 /* INFO SECTION STYLES END */
 
 /* NIKE SECTION STYLES START */
-/* .nike-section{
+.nike-section{
     position: relative;
     margin-bottom: 176.54px;
 }
@@ -234,5 +234,46 @@ a{
     height: 599.93px;
     top: -75px;
     right: calc(50% - 500px);
-} */
-/* /* NIKE SECTION STYLES END */
+}
+/*  NIKE SECTION STYLES END */
+
+/* FOOTER STYLES START */
+.site-footer{
+    background-image: url(../images/action_opt1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 240px;
+    padding-right: 125px;
+    padding-bottom: 550px;
+    padding-left: 900px;
+}
+
+.footer-wrapper{
+    width: 490px;
+}
+.footer-title{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.footer-text{
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.footer-btn{
+    padding: 12px 46px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #EA625C;
+}
+
+
+/* FOOTER STYLES END */
